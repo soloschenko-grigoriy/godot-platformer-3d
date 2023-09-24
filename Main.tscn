@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://ch5ho3w10cera"]
+
+[ext_resource type="PackedScene" uid="uid://bpfsid3oingk6" path="res://Platforms/PlatformLarge.tscn" id="1_l0bqd"]
+[ext_resource type="Script" path="res://Player.cs" id="2_av4lh"]
+[ext_resource type="ArrayMesh" uid="uid://gjuyfsvj5gs0" path="res://Models/characterVampire.obj" id="2_brn04"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lyto0"]
+radius = 0.256235
+height = 0.878741
+
+[node name="Main" type="Node3D"]
+
+[node name="PlatformLarge" parent="." instance=ExtResource("1_l0bqd")]
+
+[node name="Player" type="CharacterBody3D" parent="."]
+script = ExtResource("2_av4lh")
+
+[node name="CharacterVampire" type="MeshInstance3D" parent="Player"]
+mesh = ExtResource("2_brn04")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.40779, 0)
+shape = SubResource("CapsuleShape3D_lyto0")
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 1.57288, 2.19789)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.824729, -0.370744, 0.427049, 2.26937e-08, 0.755133, 0.655572, -0.565529, -0.540669, 0.62278, 0, 4.06806, 0)
+light_color = Color(1, 1, 0.905882, 1)
+shadow_enabled = true
+shadow_bias = 0.2
+shadow_normal_bias = 0.0
+shadow_transmittance_bias = -16.0
+shadow_blur = 0.5
