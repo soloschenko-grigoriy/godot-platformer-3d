@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://ch5ho3w10cera"]
+[gd_scene load_steps=6 format=3 uid="uid://ch5ho3w10cera"]
 
 [ext_resource type="PackedScene" uid="uid://bpfsid3oingk6" path="res://Platforms/PlatformLarge.tscn" id="1_l0bqd"]
 [ext_resource type="Script" path="res://Player.cs" id="2_av4lh"]
@@ -7,6 +7,19 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lyto0"]
 radius = 0.256235
 height = 0.878741
+
+[sub_resource type="Environment" id="Environment_kk4t3"]
+background_mode = 1
+background_color = Color(0.870588, 0.6, 0.164706, 1)
+background_energy_multiplier = 0.62
+ambient_light_color = Color(0.243137, 0.00392157, 0.164706, 1)
+ssr_fade_in = 0.0375
+ssr_fade_out = 18.3792
+ssao_power = 43.2601
+glow_levels/1 = 7.44
+glow_intensity = 2.67
+fog_light_color = Color(0.568627, 0.603922, 0.658824, 1)
+fog_light_energy = 1.19
 
 [node name="Main" type="Node3D"]
 
@@ -22,7 +35,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.40779, 0)
 shape = SubResource("CapsuleShape3D_lyto0")
 
 [node name="Camera3D" type="Camera3D" parent="Player"]
-transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 1.57288, 2.19789)
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 2.57288, 4.19789)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.824729, -0.370744, 0.427049, 2.26937e-08, 0.755133, 0.655572, -0.565529, -0.540669, 0.62278, 0, 4.06806, 0)
@@ -127,3 +140,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -1, -2)
 
 [node name="PlatformLarge32" parent="." instance=ExtResource("1_l0bqd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -1, -2)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_kk4t3")

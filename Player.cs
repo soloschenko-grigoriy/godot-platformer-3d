@@ -17,6 +17,14 @@ public partial class Player : CharacterBody3D
         _model = GetNode<MeshInstance3D>("Model");
     }
 
+    public override void _Process(double delta)
+    {
+        if (GlobalPosition.Y < -10)
+        {
+            GameOver();
+        }
+    }
+
     public override void _PhysicsProcess(double delta)
     {
         var velocity = Velocity;
@@ -56,5 +64,10 @@ public partial class Player : CharacterBody3D
         rotation.Y = (float) Mathf.Lerp(_model.Rotation.Y, _facingAngle, 0.5f);
             
         _model.Rotation = rotation;
+    }
+
+    private void GameOver()
+    {
+        GetTree().ReloadCurrentScene();
     }
 }
