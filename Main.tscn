@@ -10,12 +10,10 @@ height = 0.878741
 
 [node name="Main" type="Node3D"]
 
-[node name="PlatformLarge" parent="." instance=ExtResource("1_l0bqd")]
-
 [node name="Player" type="CharacterBody3D" parent="."]
 script = ExtResource("2_av4lh")
 
-[node name="CharacterVampire" type="MeshInstance3D" parent="Player"]
+[node name="Model" type="MeshInstance3D" parent="Player"]
 mesh = ExtResource("2_brn04")
 skeleton = NodePath("../..")
 
@@ -34,3 +32,98 @@ shadow_bias = 0.2
 shadow_normal_bias = 0.0
 shadow_transmittance_bias = -16.0
 shadow_blur = 0.5
+
+[node name="PlatformLarge" parent="." instance=ExtResource("1_l0bqd")]
+
+[node name="PlatformLarge2" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -1, 0)
+
+[node name="PlatformLarge3" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -1, 0)
+
+[node name="PlatformLarge4" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, -1, 0)
+
+[node name="PlatformLarge5" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 2)
+
+[node name="PlatformLarge6" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -1, 2)
+
+[node name="PlatformLarge7" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -1, 2)
+
+[node name="PlatformLarge8" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, -1, 2)
+
+[node name="PlatformLarge9" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, -1, 0)
+
+[node name="PlatformLarge10" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -1, 0)
+
+[node name="PlatformLarge11" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -1, 0)
+
+[node name="PlatformLarge12" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -1, 0)
+
+[node name="PlatformLarge13" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, -1, 2)
+
+[node name="PlatformLarge14" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -1, 2)
+
+[node name="PlatformLarge15" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -1, 2)
+
+[node name="PlatformLarge16" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -1, 2)
+
+[node name="PlatformLarge17" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, -4)
+
+[node name="PlatformLarge18" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -1, -4)
+
+[node name="PlatformLarge19" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -1, -4)
+
+[node name="PlatformLarge20" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, -1, -4)
+
+[node name="PlatformLarge21" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, -2)
+
+[node name="PlatformLarge22" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -1, -2)
+
+[node name="PlatformLarge23" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -1, -2)
+
+[node name="PlatformLarge24" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, -1, -2)
+
+[node name="PlatformLarge25" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, -1, -4)
+
+[node name="PlatformLarge26" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -1, -4)
+
+[node name="PlatformLarge27" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -1, -4)
+
+[node name="PlatformLarge28" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -1, -4)
+
+[node name="PlatformLarge29" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, -1, -2)
+
+[node name="PlatformLarge30" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, -1, -2)
+
+[node name="PlatformLarge31" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -1, -2)
+
+[node name="PlatformLarge32" parent="." instance=ExtResource("1_l0bqd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -1, -2)
